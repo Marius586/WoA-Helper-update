@@ -18,7 +18,9 @@ body:
     attributes:
       label: "Reproduction steps"
       description: Steps to reproduce the behavior
-      value: 
+      placeholder: Step 1:
+      Step 2: 
+      etc.
       render: bash
     validations:
       required: true

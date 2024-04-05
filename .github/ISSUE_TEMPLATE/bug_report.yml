@@ -1,0 +1,68 @@
+name: "Bug report"
+description: Report an issue to help the project improve.
+title: "[BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps"
+      description: Steps to reproduce the behavior
+      value: 
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: version
+    attributes:
+      label: "Device, ROM and version"
+      description: Please write down what phone you have, which Android version it is running, and which ROM you are using.
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output if available.
+      render: bash
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Agreement
+      description: By creating this issue I made sure that ...
+      options:
+        - label: I am running Windows on the phone
+          required: true
+        - label: There is no issue already describing my problem.
+          required: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
